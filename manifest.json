@@ -5,12 +5,6 @@
   "description": "This extension will mapit",
   "version": "1.0",
 
-  "content_scripts": [
-    {
-      "matches": ["<all_urls>"],
-      "js": ["content.js"]
-    }
-  ],
   "browser_action": {
     "default_popup": "popup.html",
     "default_title": "title"
