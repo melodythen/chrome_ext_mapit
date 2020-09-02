@@ -3,12 +3,68 @@
 <head>
     <title>mapit</title>
     <script src="popup.js"></script>
+
+
+    <style type="text/css">
+
+        body {
+            min-width: 400px; /* your desired width */
+            max-width: 100%;
+            position: relative;
+            vertical-align: middle;
+        }
+        .button {
+            border: none;
+            color: white;
+            padding: 16px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            transition-duration: 0.4s;
+            cursor: pointer;
+            align
+        }
+        .button1 {
+            background-color: white;
+            color: black;
+            border: 2px solid #4CAF50;
+        }
+        .button1:hover {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        .button2 {
+            background-color: white;
+            color: black;
+            border: 2px solid #008CBA;
+        }
+
+        .button2:hover {
+            background-color: #008CBA;
+            color: white;
+        }
+
+
+    </style>
 </head>
 <body>
     <h1>mapIt</h1>
+    <h2 style="text-align: center">Find the Address</h2>
+    <textarea cols='60' rows="4" id="address" placeholder="Enter the address"></textarea>
+    <br />
+    <button class="button button1" id="mapit" ,style="margin: 5px ">mapIt</button>
+    <br /><br />
 
-    <textarea id="address" placeholder="Enter the address"></textarea>
-    <button>mapIt</button>
-    
+    <h2 style="text-align: center">Find the Directions</h2>
+    <textarea cols='60' rows="4" id="source" placeholder="Enter the starting address"></textarea>
+    <br />
+
+    <textarea cols='60' rows="4" id="destination" placeholder="Enter the destination address(es)"></textarea>
+    <br />
+    <button class="button button2" id="directions">Directions</button>
+
 </body>
 </html>
