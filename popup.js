@@ -1,15 +1,17 @@
 document.addEventListener('DOMContentLoaded', function () {
 
+    var check_map = document.getElementById('mapit');
+    if (check_map) {
+        check_map.addEventListener('click', onclick, false);
+    }
+
+
     var check_dir = document.getElementById('directions');
     if (check_dir) {
         check_dir.addEventListener('click', getdirections, false);
     }
 
 
-    var check_map = document.getElementById('mapit');
-    if (check_map) {
-        check_dir.addEventListener('click', onclick, false);
-    }
 
     function onclick() {
         chrome.tabs.query({ currentWindow: true, active: true },
